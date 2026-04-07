@@ -66,8 +66,8 @@ if total > 0:
 else:
     accuracy = 0.0
 
-print(f"\nTotal Samples: {total}")
-print(f"Correct Predictions: {correct}")
-print(f"Wrong Predictions: {wrong}")
-print(f"Accuracy: {accuracy:.2f}")
-print(f"Predictions: {y_pred_list}")
+print("Correct:", correct)
+print("Wrong:", wrong)
+print("Total:", total)
+print("Accuracy (%):", accuracy)
+print("All predictions:", y_pred_list)
