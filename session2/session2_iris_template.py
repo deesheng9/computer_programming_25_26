@@ -34,3 +34,16 @@ label_key = "species"
 # Task 5: Comparing with threshold
 is_short_petal = petal_length < threshold
 print("Is short petal: ", is_short_petal)
+
+# Section 2.9 Take Home Exercise
+sepal_length_2 = 4.9
+sepal_width_2 = 3.0
+petal_length_2 = 1.4
+petal_width_2 = 0.2
+species_2 = "setosa"
+
+# Petal area for second flower
+petal_area_2 = petal_length_2 * petal_width_2
+
+# Print the petal area for the second flower
+print("\nPetal Area 2:", petal_area_2)
