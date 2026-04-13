@@ -1,5 +1,3 @@
-
-
 # Session 2 continuity variables (Rule settings). Do not change these.
 THRESHOLD = 2.0
 FEATURE_NAME = "petal_length"
@@ -7,18 +5,10 @@ POSITIVE_LABEL = "setosa"
 NEGATIVE_LABEL = "not_setosa"
 LABEL_KEY = "species"
 
-
-
 correct = 0      # Count of correct predictions
 wrong = 0        # Count of wrong predictions
 total = 0        # Total samples processed
 y_pred_list = []  # List of all predictions made
-threshold = 2.0
-feature_name = "petal_length"
-positive_label = "setosa"
-negative_label = "not_setosa"
-label_key = "species"
-
 
 flower1 = {
     "id": "flower1",
@@ -39,25 +29,23 @@ flower2 = {
     "species": "setosa"
 }
 
-
 # Task 2: Create list of dictionaries
 dataset = [flower1, flower2]
-
 
 # Task 3: Create a for loop to process the dataset
 for sample in dataset:
     print(sample["id"], sample["petal_length"], sample["species"])
 
 # Task 4: Use an if-else statement to classify each sample
-    if sample[feature_name] < threshold:
-        y_pred = positive_label
+    if sample[FEATURE_NAME] < THRESHOLD:
+        y_pred = POSITIVE_LABEL
     else:
-        y_pred = negative_label
+        y_pred = NEGATIVE_LABEL
 
-    if sample[label_key] == positive_label:
-        y_true = positive_label
+    if sample[LABEL_KEY] == POSITIVE_LABEL:
+        y_true = POSITIVE_LABEL
     else:
-        y_true = negative_label
+        y_true = NEGATIVE_LABEL
 
     if y_pred == y_true:
         correct += 1
