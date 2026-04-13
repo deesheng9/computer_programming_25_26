@@ -35,6 +35,15 @@ label_key = "species"
 is_short_petal = petal_length < threshold
 print("Is short petal: ", is_short_petal)
 
+petal_length_text = str(petal_length)
+threshold_text = str(threshold)
+threshold_number = float(threshold)
+
+print(
+    f"petal_length_text: {petal_length_text} | type: {type(petal_length_text)}")
+print(f"threshold_text: {threshold_text} | type: {type(threshold_text)}")
+print(f"threshold_number: {threshold_number} | type: {type(threshold_number)}")
+
 # Section 2.9 Take Home Exercise
 sepal_length_2 = 4.9
 sepal_width_2 = 3.0
