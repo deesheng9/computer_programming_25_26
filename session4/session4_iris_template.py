@@ -39,7 +39,7 @@ def setup_application_list():
 
     flower2 = {
         "id": "flower2",
-        "sepal_length": 5.9,
+        "sepal_length": 4.9,
         "sepal_width": 3.0,
         "petal_length": 1.4,
         "petal_width": 0.2,
@@ -50,8 +50,9 @@ def setup_application_list():
     # Combine our dictionaries into a single list
     dataset = [flower1, flower2]
     print("Dataset:", dataset)
-    # Note here that we return the dataset list from this function, so we can use it later in the main function.
     return dataset
+    # Note here that we return the dataset list from this function, so we can use it later in the main function.
+
 
 # Task 5: Predict the class using petal length
 
@@ -264,6 +265,7 @@ def main():
 
     # Task 12: Create and call the summary-report function
     print_summary(correct, wrong, total, y_pred_list, accuracy)
+    print("\n=== End of session 4 ===")
 
 
 if __name__ == "__main__":
